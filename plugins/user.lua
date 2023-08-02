@@ -12,12 +12,13 @@ return {
   --   end,
   -- },
 
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
+  -- Tokyonight Theme
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  -- },
 
   -- Todo-comments
   -- https://github.com/folke/todo-comments.nvim
@@ -33,6 +34,18 @@ return {
     cmd = { "TodoQuickFix" },
     keys = {
       { "<leader>T", "<cmd>TodoTelescope<cr>", desc = "Open TODOs in Telescopr" },
+    },
+  },
+
+  -- Hop (Better Navigation)
+  {
+    "phaazon/hop.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+    keys = {
+      { "<leader>;", "<cmd>HopAnywhere<cr>", desc = "Hop Anywhere" },
+      { "<leader>,", "<cmd>HopWord<cr>", desc = "Hop Word" },
     },
   },
 }
